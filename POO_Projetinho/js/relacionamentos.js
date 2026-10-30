@@ -1,8 +1,3 @@
-// ─────────────────────────────────────────────────────────────
-// MISSÃO 7 — Agregação (TrilhaEstudo ◇── Disciplina)
-// MISSÃO 8 — Composição (PlanoEstudo ◆── ItemCronograma)
-//            Dependência (ServicoAlertaResponsavel - - -> ...)
-// ─────────────────────────────────────────────────────────────
 class TrilhaEstudo {
   #titulo;
   #administrador;   // associação

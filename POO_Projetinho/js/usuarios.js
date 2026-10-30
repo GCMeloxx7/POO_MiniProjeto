@@ -1,8 +1,3 @@
-// ─────────────────────────────────────────────────────────────
-// MISSÃO 3 — Classe abstrata e herança
-// MISSÃO 5 — Polimorfismo estático (sobrecarga) em Discente
-// MISSÃO 7 — Associação em Responsavel
-// ─────────────────────────────────────────────────────────────
 class Usuario {
   #id;
   #nome;

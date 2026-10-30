@@ -1,14 +1,3 @@
-// ─────────────────────────────────────────────────────────────
-// MISSÃO 6 — Interfaces (em JS = contrato documentado + Duck Typing)
-// ─────────────────────────────────────────────────────────────
-//
-// INotificador:
-//    obterCanal()                         -> string
-//    enviarAlerta(destinatario, mensagem) -> boolean
-//
-// IExportavelJson:
-//    paraJson()                           -> string (JSON)
-
 function verificarNotificador(obj) {
   const ok = obj && typeof obj.obterCanal === "function" &&
              typeof obj.enviarAlerta === "function";

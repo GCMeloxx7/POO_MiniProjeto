@@ -1,7 +1,3 @@
-// ─────────────────────────────────────────────────────────────
-// MISSÃO 10 — Cliente do Backend C# (http://localhost:5080)
-// Dependência: recebe os objetos por parâmetro, não guarda nenhum.
-// ─────────────────────────────────────────────────────────────
 class ClienteBackendEstudo {
   #urlBase;
 

@@ -1,6 +1,3 @@
-// ─────────────────────────────────────────────────────────────
-// MISSÃO 4 — Polimorfismo dinâmico (sobrescrita)
-// ─────────────────────────────────────────────────────────────
 class SessaoEstudo {
   #disciplina;
   #duracaoMinutos;

@@ -1,6 +1,3 @@
-// ─────────────────────────────────────────────────────────────
-// MISSÃO 2 — Encapsulamento (e IExportavelJson da Missão 6)
-// ─────────────────────────────────────────────────────────────
 class MetaEstudo {
   #metaMinutosSemana;
   #minutosCumpridos = 0; // sempre começa em 0 e só muda via registrarAvanco()
