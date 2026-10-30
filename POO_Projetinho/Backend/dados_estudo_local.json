@@ -1,0 +1,75 @@
+﻿{
+    "disciplinas":  [
+                        {
+                            "id":  1,
+                            "nome":  "Programação Orientada a Objetos",
+                            "categoria":  "Computação",
+                            "cargaHorariaSemanal":  4
+                        },
+                        {
+                            "id":  2,
+                            "nome":  "Banco de Dados e Modelagem SQL",
+                            "categoria":  "Dados",
+                            "cargaHorariaSemanal":  4
+                        },
+                        {
+                            "id":  3,
+                            "nome":  "Projeto Interdisciplinar (PI)",
+                            "categoria":  "Prática",
+                            "cargaHorariaSemanal":  6
+                        }
+                    ],
+    "usuarios":  [
+                     {
+                         "id":  1,
+                         "nome":  "Profa. Helena (Coordenação)",
+                         "email":  "helena@fecap.br",
+                         "tipoPerfil":  "Administrador",
+                         "matriculaOuCargo":  "Coordenação PI",
+                         "responsavelNome":  ""
+                     },
+                     {
+                         "id":  2,
+                         "nome":  "Carlos Silva (Pai do Lucas)",
+                         "email":  "carlos@email.com",
+                         "tipoPerfil":  "Responsavel",
+                         "matriculaOuCargo":  "Responsável Legal",
+                         "responsavelNome":  ""
+                     },
+                     {
+                         "id":  3,
+                         "nome":  "Lucas Silva",
+                         "email":  "lucas.silva@edu.fecap.br",
+                         "tipoPerfil":  "Discente",
+                         "matriculaOuCargo":  "RA-2026101",
+                         "responsavelNome":  "Carlos Silva (Pai do Lucas)"
+                     },
+                     {
+                         "id":  4,
+                         "nome":  "Mariana Costa",
+                         "email":  "mariana.costa@edu.fecap.br",
+                         "tipoPerfil":  "Discente",
+                         "matriculaOuCargo":  "RA-2026102",
+                         "responsavelNome":  "Carlos Silva (Pai do Lucas)"
+                     }
+                 ],
+    "sessoes":  [
+
+                ],
+    "metas":  [
+                  {
+                      "id":  1,
+                      "discenteNome":  "Lucas Silva",
+                      "responsavelNome":  "Gustavo Melo",
+                      "metaMinutosSemana":  200,
+                      "minutosCumpridos":  75
+                  },
+                  {
+                      "id":  2,
+                      "discenteNome":  "Mariana Costa",
+                      "responsavelNome":  "Carlos Silva (Pai do Lucas)",
+                      "metaMinutosSemana":  240,
+                      "minutosCumpridos":  90
+                  }
+              ]
+}

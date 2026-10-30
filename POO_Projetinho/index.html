@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FecapStudy — Plataforma de Apoio ao Estudo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo">
+  <div>
+    <h1>KFKA Projetinho</h1>
+    <p class="sub">Registre seus estudos, acompanhe a meta da semana e avise quem te apoia.</p>
+  </div>
+  <button type="button" id="btnStatus" class="pill pill-neutra" title="Clique para verificar de novo">
+    Verificando backend…
+  </button>
+</header>
+
+<main class="grade">
+
+  <!-- Perfil -->
+  <section class="cartao" aria-labelledby="t-perfil">
+    <h2 id="t-perfil">Perfis</h2>
+    <p id="painelDiscente" class="painel painel-destaque"></p>
+    <p id="painelResponsavel" class="painel"></p>
+    <p id="painelAdmin" class="painel"></p>
+    <p id="infoTrilha" class="painel suave"></p>
+    <p id="infoPlano" class="painel suave"></p>
+  </section>
+
+  <!-- Meta -->
+  <section class="cartao" aria-labelledby="t-meta">
+    <h2 id="t-meta">Meta da semana</h2>
+    <div class="meta-linha">
+      <span id="metaPct" class="meta-pct">0%</span>
+      <span id="metaTexto" class="suave"></span>
+    </div>
+    <div class="barra" role="progressbar" aria-labelledby="t-meta"
+         aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="barra">
+      <div class="barra-preenchida" id="barraPreenchida"></div>
+    </div>
+
+    <div class="notificar">
+      <label for="canal">Avisar o responsável por</label>
+      <select id="canal">
+        <option value="email">E-mail</option>
+        <option value="whatsapp">WhatsApp</option> 
+        <option value="painel">Painel</option>
+      </select>
+      <button type="button" id="btnNotificar" class="btn btn-secundario">Notificar responsável</button>
+    </div>
+  </section>
+
+  <!-- Formulário -->
+  <section class="cartao" aria-labelledby="t-form">
+    <h2 id="t-form">Nova sessão de estudo</h2>
+    <form id="formSessao" class="form" novalidate>
+      <label>Disciplina
+        <select id="disciplina"></select>
+      </label>
+      <label>Modalidade
+        <select id="modalidade">
+          <option value="Pomodoro">Pomodoro</option>
+          <option value="Exercicios">Exercícios</option>
+          <option value="Leitura">Leitura</option>
+        </select>
+      </label>
+      <label>Duração (minutos)
+        <input type="number" id="duracao" min="1" max="480" value="25">
+      </label>
+      <div id="extras" class="extras"></div>
+      <button type="submit" class="btn">Registrar estudo</button>
+    </form>
+  </section>
+
+  <!-- Histórico local -->
+  <section class="cartao" aria-labelledby="t-hist">
+    <h2 id="t-hist">Histórico desta sessão</h2>
+    <ul id="historico" class="lista"></ul>
+    <p id="historicoVazio" class="vazio">Nenhum estudo registrado ainda. Preencha o formulário e clique em “Registrar estudo”.</p>
+  </section>
+
+  <!-- Servidor -->
+  <section class="cartao largo" aria-labelledby="t-srv">
+    <h2 id="t-srv">Dados gravados no servidor</h2>
+    <div class="acoes">
+      <button type="button" id="btnHistoricoServidor" class="btn btn-secundario">Carregar histórico do servidor</button>
+      <button type="button" id="btnRelatorio" class="btn btn-secundario">Ver relatório do discente</button>
+    </div>
+    <ul id="listaServidor" class="lista"></ul>
+    <pre id="relatorio" class="relatorio" hidden></pre>
+  </section>
+
+</main>
+
+<div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+
+<!-- Ordem importa: as classes mãe precisam existir antes das filhas -->
+<script src="js/disciplina.js"></script>
+<script src="js/metaEstudo.js"></script>
+<script src="js/interfaces.js"></script>
+<script src="js/sessoes.js"></script>
+<script src="js/usuarios.js"></script>
+<script src="js/relacionamentos.js"></script>
+<script src="js/clienteBackend.js"></script>
+<script src="js/demo.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
