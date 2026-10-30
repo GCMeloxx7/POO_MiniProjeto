@@ -1,8 +1,3 @@
-// ─────────────────────────────────────────────────────────────
-// Testes de mesa das Missões 1 a 8.
-// Abra a página, aperte F12 (Console) e digite:   rodarDemo()
-// Cada linha mostra ✔ (passou) ou ✘ (falhou).
-// ─────────────────────────────────────────────────────────────
 function rodarDemo() {
   let falhas = 0;
   const conferir = (descricao, condicao) => {
