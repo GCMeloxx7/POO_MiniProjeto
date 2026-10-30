@@ -1,10 +1,3 @@
-// ─────────────────────────────────────────────────────────────
-// MISSÃO 9 e 10 — Tela + integração com o Backend
-// Regra de ouro: a tela só LÊ campos, CRIA o objeto certo e deixa
-// as classes calcularem XP e percentual. Nenhuma fórmula aqui.
-// ─────────────────────────────────────────────────────────────
-
-// ── 1. Monta o domínio (troque pelos dados reais do seu grupo) ──
 const disciplinas = [
   new Disciplina("ADS201", "Programação Orientada a Objetos", "Computação", 4),
   new Disciplina("ADS202", "Banco de Dados", "Dados", 4),
